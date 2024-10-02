@@ -2,8 +2,7 @@ import React from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// import required modules
-import { Navigation } from "swiper/modules";
+
 
 // Import Swiper styles
 import "swiper/css";
@@ -62,15 +61,15 @@ const Quote = () => {
           </div>
         </div>
         <Swiper
-          slidesPerView={1}
+          slidesPerView={1.1}
           spaceBetween={10}
           breakpoints={{
             640: {
-              slidesPerView: 2,
+              slidesPerView: 2.1,
               spaceBetween: 10,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 2.1,
               spaceBetween: 15,
             },
             1024: {
@@ -78,10 +77,8 @@ const Quote = () => {
               spaceBetween: 15,
             },
           }}
-          navigation={true}
-          modules={[Navigation]}
           loop={true}
-          className="mySwiper w-2/3 h-full"
+          className="mySwiper md:w-2/3 w-full h-full"
         >
           {quoteData.map((item) => (
             <SwiperSlide className="bg-neutral-900 rounded-s-3xl rounded-ee-3xl p-3 flex flex-col justify-start">
