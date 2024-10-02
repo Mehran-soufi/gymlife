@@ -153,28 +153,3 @@ body {
   left: 0;
   bottom: 2%;
 }
-
-/* quote swiper custom style */
-/* icon style */
-.quote .swiper-button-next,
-.quote .swiper-button-prev {
-  position: absolute !important;
-  top: 70% !important;
-}
-
-/* .quote .swiper-button-next{
-  right: -30% !important
-} */
-.quote .swiper-button-next {
-  background-image: url('./assests/quote/left-arrow.svg') !important;
-}
-
-.quote .swiper-button-prev {
-  background-image: url('./assests/quote/right-arrow.svg') !important;
-}
-
-.quote .swiper-button-next::after,
-.quote .swiper-button-prev::after {
-  /* content: "" !important; */
-  color: #fff !important;
-}
